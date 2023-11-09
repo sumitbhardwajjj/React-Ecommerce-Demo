@@ -1,13 +1,13 @@
-import React from 'react'
-import Navbar from './navbar'
+import React from "react";
+import Navbar from "./Navbar";
 
 const Account = () => {
   return (
     <div>
+      <Navbar />
       <h1>About us</h1>
-      <Navbar/>
     </div>
-  )
-}
+  );
+};
 
-export default Account
+export default Account;
