@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { addtoCart } from "./CartSlice";
 import { useDispatch } from "react-redux";
 import Navbar from "./Navbar";
+import '../styles/ProductDetalis.css'
 
 const ProductsDetails = () => {
   const dispatch = useDispatch();
@@ -28,7 +29,7 @@ const ProductsDetails = () => {
       style={{
         height: "450px",
         margin: "10px",
-        width: "420px",
+        width: "430px",
         textAlign: "center",
       }}
     >
@@ -57,7 +58,8 @@ const ProductsDetails = () => {
     <div>
       <Navbar />
       <h1>detail page</h1>
-      <div>{cards}</div>
+      <div className="detail">
+      {cards}</div>
     </div>
   );
 };

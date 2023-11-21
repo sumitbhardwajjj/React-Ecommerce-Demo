@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button'
 import { addtoCart } from './CartSlice'
 import {useDispatch} from 'react-redux'
 import {Link} from 'react-router-dom'
+import '../styles/ProductDetalis.css'
 
 const Product = () => {
   const dispatch = useDispatch();
@@ -52,7 +53,7 @@ const Product = () => {
       <input type="range" min="0" max='1001'  value={price} onChange={(e)=>setprice(e.target.value)}/>
       <h5>Price: ${price}</h5>
       </div>
-      <div className="row">{cards}</div>
+   <div className="row">{cards}</div>
       <div className="d-flex justify-content-center p-5">
         <ul className="pagination">
           <li className="page-item">
@@ -69,7 +70,7 @@ const Product = () => {
             <a href="#" className="page-link" onClick={nextPage}>Next</a>
           </li>
         </ul>
-      </div>     
+      </div>   
     </div>
   )
 
